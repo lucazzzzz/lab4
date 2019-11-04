@@ -3,7 +3,7 @@ import myModule4
 import myModule3
 import timeit
 import math
-import _thread
+import threading
 
 
 def cpp_simple():
@@ -24,6 +24,7 @@ def python_thread(debut, fin):
     a = []
     for i in range(int(debut), int(fin)):
         a.append(math.tanh(i))
+    return a
 
 
 def python_simple():
@@ -41,10 +42,20 @@ def python_simple():
 def python_threads():
     iteration = textentry.get()
     start = timeit.default_timer()
-    _thread.start_new_thread(python_thread, (0, (int(iteration)/4) - 1))
-    _thread.start_new_thread(python_thread, (int(iteration)/4, (int(iteration)/2) - 1))
-    _thread.start_new_thread(python_thread, (int(iteration)/2, (3*int(iteration)/4) - 1))
-    _thread.start_new_thread(python_thread, (3*int(iteration)/4, int(iteration) - 1))
+    
+    t1 = threading.Thread(target = python_thread, args = (0, int(iteration)/4))
+    t2 = threading.Thread(target = python_thread, args = (0, int(iteration)/4))
+    t3 = threading.Thread(target = python_thread, args = (0, int(iteration)/4))
+    t4 = threading.Thread(target = python_thread, args = (0, int(iteration)/4))
+    t1.start()
+    t2.start()
+    t3.start()
+    t4.start()
+    t1.join()
+    t2.join()
+    t3.join()
+    t4.join()
+    
     stop = timeit.default_timer()
     time2 = stop - start
     output.delete(0.0, END)
