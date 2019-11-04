@@ -11,7 +11,7 @@ Ensuite, il faut ajouter les fichiers sources au projet, mais dans le cas de ce 
 
 ![Screenshot #2](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/SourceCPP.JPG)
 
-Il faut ensuite régler correctement les propriétés du projet pour que le code fonctionne! Voici 2 images qui illustrent toutes les librairies à ajouter et toutes les configurations à changer sur VisualStudio (ne pas oublier de changer les options de configuration pour Release et les options de plateforme pour x64):
+Il faut ensuite régler correctement les propriétés du projet pour que le code fonctionne! Voici 2 images qui illustrent toutes les librairies à ajouter et toutes les configurations à changer sur VisualStudio, le nom de la cible doit abosulement être myModule3 comme indiqué sur l'image (ne pas oublier de changer les options de configuration pour Release et les options de plateforme pour x64):
 
 ![Screenshot #3](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProprietesModule3.JPG)
 
@@ -21,24 +21,22 @@ Une fois que la solution a été générée, il faut maintenant générer le mod
 
 ![Screenshot #5](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/SourceThreadCPP.JPG)
 
-Ne pas oublier
+Ne pas oublier de changer les propriétés pour que le nom de la cicle soit myModule4 et générez ensuite la solution:
 
-![Screenshot #6](https://github.com/lucazzzzz/Lab3/blob/master/Images/ExampleAVI.jpg)
+![Screenshot #6](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProprietesModule4.JPG)
 
 ## Configuration Python
 
-Il ne reste que le fichier videoplayer.py à ajouter au bon endroit, se sera dans le même dossier que le fichier myModule.pyd. Il faut générer la solution sur VisualStudio avant de compléter cette étape. Ne pas oublier d'ouvrir la console de commande dans le même dossier que le fichier videoplayer.py:
+Il ne reste que le fichier timer.py à ajouter au bon endroit, se sera dans le même dossier que les fichiers myModule3.pyd et myModule4.pyd:
 
-![Screenshot #7](https://github.com/lucazzzzz/Lab3/blob/master/Images/FichierPYauBonEndroit.JPG)
+![Screenshot #7](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/AjouterTimerPY.JPG)
 
-![Screenshot #8](https://github.com/lucazzzzz/Lab3/blob/master/Images/InvdeCommande.JPG)
+Maintenant il faut ouvrir la console de commande et créer l'environnement virtuel pour exécuter le fichier timer.py. Voici une image de toutes les commandes à effectuer sur la console de commande:
 
-Maintenant il faut créer l'environnement virtuel pour exécuter le fichier videoplayer.py et installer la librairie readchar pour que le code fonctionne. Voici une image de toutes les commandes à effectuer sur la console de commande:
+![Screenshot #8](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/VENV.JPG)
+
+M
 
 ![Screenshot #9](https://github.com/lucazzzzz/Lab3/blob/master/Images/CommandesVENV.JPG)
 
-La dernière commande "python videoplayer.py" va exécuter le code et l'interface tkinter vas apparaître. Notre code a été écrit en fonction que l'utilisateur appuie sur le boutton "Search File" en premier, si un autre boutton est appuyé avant le logiciel ne fonctionne pas. Lorsque l'utilisateur appuye sur le boutton "Search File" une fenêtre apparait et demande où aller chercher le fichier "Example.AVI", dans notre cas ce sera dans le disque C:/ 
 
-![Screenshot #10](https://github.com/lucazzzzz/Lab3/blob/master/Images/SearchFileExampleAVI.JPG)
-
-L'uilisateur peut maintenant utiliser les autres bouttons dans l'interface tkinter : Pause/Play pour arrêter et faire jouer la vidéo, Avance Rapide pour que la vidéo avance deux fois plus vite, Reset pour revenir au début de la vidéo et Quitter pour fermer l'interface et la vidéo
