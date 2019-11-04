@@ -3,13 +3,19 @@
 #include <list>
 #include <math.h>    
 #include <thread>
+#include <chrono>
 
 void task1();
 std::list<double> L;
 
 static PyObject* boucle(PyObject* self, PyObject* args) {
 
-	
+		
+	typedef std::chrono::high_resolution_clock Time;
+	typedef std::chrono::milliseconds ms;
+	typedef std::chrono::duration<float> fsec;
+
+	auto time0 = Time::now();
 	std::thread t1(task1);
 	std::thread t2(task1);
 	std::thread t3(task1);
@@ -20,6 +26,8 @@ static PyObject* boucle(PyObject* self, PyObject* args) {
 	t3.join();
 	t4.join();
 	
+	auto time1 = Time::now();
+	fsec fs = time1 - time0;
 
 	PyObject * python_val = Py_BuildValue("f", fs.count());
 	return python_val;
