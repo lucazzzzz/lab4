@@ -35,8 +35,8 @@ Maintenant il faut ouvrir la console de commande et créer l'environnement virtu
 
 ![Screenshot #8](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/VENV.JPG)
 
-M
+La fenêtre de l'interface graphique va apparaître, comme le texte l'indique vous devez entrer le nombre d'itérations que vous souhaitez effectuer, mais il faut que ce soit un nombre entier, sinon le logiciel ne fonctionne pas. Une fois votre nombre choisi, vous devez cliquer sur un des 4 boutons à votre diposition, et vous allez choisir le type de boucle qui sera effectuée par le logiciel. Notre logiciel ne permet pas de choisir le nombre de threads. Le temps d'exécution est affiché après avoir choisi le type de boucle souhaitée:
 
-![Screenshot #9](https://github.com/lucazzzzz/Lab3/blob/master/Images/CommandesVENV.JPG)
+![Screenshot #9](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/GUI.JPG)
 
 
