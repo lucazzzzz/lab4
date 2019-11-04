@@ -6,21 +6,22 @@ Pour commencer, il faut tout d'abord créer un projet VisualStudio en C++ dans l
 
 ![Screenshot #1](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProjetVS.JPG)
 
-Ensuite, il faut ajouter tous les fichiers d'en-tête et tous les fichiers sources au projet:
+Ensuite, il faut ajouter les fichiers sources au projet, mais dans le cas de ce laboratoire il faut ajouter un fichier cpp 
+ la fois, on va commencer par le fichier boucle_simple.cpp:
 
-![Screenshot #2](https://github.com/lucazzzzz/Lab3/blob/master/Images/AjouterFichiersdeGit.jpg)
+![Screenshot #2](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/SourceCPP.JPG)
 
-Finalement, il faut régler correctement les propriétés du projet pour que le code fonctionne! Voici 3 images qui illustrent toutes les librairies à ajouter et toutes les configurations à changer sur VisualStudio (ne pas oublier de changer les options de configuration pour Release et les options de plateforme pour x64):
+Il faut ensuite régler correctement les propriétés du projet pour que le code fonctionne! Voici 2 images qui illustrent toutes les librairies à ajouter et toutes les configurations à changer sur VisualStudio (ne pas oublier de changer les options de configuration pour Release et les options de plateforme pour x64):
 
-![Screenshot #3](https://github.com/lucazzzzz/Lab3/blob/master/Images/ProprietesProjetLib.jpg)
+![Screenshot #3](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProprietesModule3.JPG)
 
-![Screenshot #4](https://github.com/lucazzzzz/Lab3/blob/master/Images/LibrairiePython.jpg)
+![Screenshot #4](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProprietesPython.JPG)
 
-![Screenshot #5](https://github.com/lucazzzzz/Lab3/blob/master/Images/LibrairieDirectShow.jpg)
+Une fois que la solution a été générée, il faut maintenant générer le module pyd pour le deuxième fichier cpp, boucle_thread.cpp (il faut tout d'abord supprimer le fichier boucle_simple du projet et ajouter le deuxième fichier boucle_thread):
 
-## Ajouter la vidéo sur le C:/
+![Screenshot #5](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/SourceThreadCPP.JPG)
 
-Il ne faut pas oublier d'ajouter la vidéo à manipuler au bon endroit, pour cet exemple se sera le disque C:/ mais il peut être n'importe où dans l'ordinateur
+Ne pas oublier
 
 ![Screenshot #6](https://github.com/lucazzzzz/Lab3/blob/master/Images/ExampleAVI.jpg)
 
