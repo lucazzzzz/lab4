@@ -7,10 +7,11 @@
 
 void task1();
 std::list<double> L;
-
+int total;
 static PyObject* boucle(PyObject* self, PyObject* args) {
 
-		
+	
+	PyArg_ParseTuple(args, "i", &total);
 	typedef std::chrono::high_resolution_clock Time;
 	typedef std::chrono::milliseconds ms;
 	typedef std::chrono::duration<float> fsec;
@@ -25,17 +26,15 @@ static PyObject* boucle(PyObject* self, PyObject* args) {
 	t2.join();
 	t3.join();
 	t4.join();
-	
 	auto time1 = Time::now();
 	fsec fs = time1 - time0;
 
 	PyObject * python_val = Py_BuildValue("f", fs.count());
 	return python_val;
 }
-
 void task1() {
-	int iteration = 1000000;
-	for (int i = 0; i < iteration/4; i++) {
+	int iteration = 0;
+	for (int i = 0; i < total/4; i++) {
 		L.push_back(i);
 	}
 }

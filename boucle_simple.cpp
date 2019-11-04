@@ -2,11 +2,12 @@
 #include <iostream>
 #include <list>
 #include <chrono>
-#include <math.h>
+#include <math.h>    
 
-
-
+int total;
 static PyObject* boucle(PyObject* self, PyObject* args) {
+
+	PyArg_ParseTuple(args, "i", &total);
 
 	std::list<double> L;
 	int iteration = 999999;
@@ -15,13 +16,13 @@ static PyObject* boucle(PyObject* self, PyObject* args) {
 	typedef std::chrono::duration<float> fsec;
 	
 	auto t0 = Time::now();
-	for (int i = 0; i <= iteration; i++){
+	for (int i = 0; i <= total; i++){
 		L.push_back(tanh(i));
 	}
 	auto t1 = Time::now();
 
 	fsec fs = t1 - t0;
-	
+
 	PyObject * python_val = Py_BuildValue("f", fs.count());
 	return python_val;
 }
