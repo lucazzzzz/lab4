@@ -4,7 +4,7 @@
 
 Pour commencer, il faut tout d'abord créer un projet VisualStudio en C++ dans le dossier de notre choix:
 
-![Screenshot #1](https://github.com/lucazzzzz/lab4/blob/master/Images/ProjetVS.JPG)
+![Screenshot #1](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProjetVS.JPG)
 
 Ensuite, il faut ajouter tous les fichiers d'en-tête et tous les fichiers sources au projet:
 
