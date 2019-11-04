@@ -21,7 +21,7 @@ Une fois que la solution a été générée, il faut maintenant générer le mod
 
 ![Screenshot #5](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/SourceThreadCPP.JPG)
 
-Ne pas oublier de changer les propriétés pour que le nom de la cicle soit myModule4 et générez ensuite la solution:
+Ne pas oublier de changer les propriétés pour que le nom de la cible soit myModule4 et générez ensuite la solution:
 
 ![Screenshot #6](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProprietesModule4.JPG)
 
