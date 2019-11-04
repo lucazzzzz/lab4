@@ -71,6 +71,6 @@ Button(window, text="Boucle 4 threads en langage compilé", command=cpp_thread) 
 Button(window, text="Boucle simple en langage interprété", command=python_simple) .grid(row=6, column=2)
 Button(window, text="Boucle 4 threads en langage interprété", command=python_threads) .grid(row=7, column=2)
 output = Text(window, width=30, height=1, wrap=WORD, background="white")
-output.grid(row=5, column=0, columnspan=1)
+output.grid(row=5, column=0, columnspan=1, sticky=E)
 
 window.mainloop()
