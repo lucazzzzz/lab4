@@ -33,7 +33,7 @@ Il ne reste que le fichier timer.py à ajouter au bon endroit, se sera dans le m
 
 ![Screenshot #7](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/AjouterTimerPY.JPG)
 
-Maintenant il faut ouvrir la console de commande et créer l'environnement virtuel pour exécuter le fichier timer.py. Voici une image de toutes les commandes à effectuer sur la console de commande:
+Maintenant il faut ouvrir la console de commande et créer l'environnement virtuel pour exécuter le fichier timer.py. Voici une image de toutes les commandes à effectuer sur la console de commande (python -m venv VPY et VPY\Scripts\activate):
 
 ![Screenshot #8](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/VENV.JPG)
 
