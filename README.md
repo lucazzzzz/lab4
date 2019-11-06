@@ -15,6 +15,8 @@ Il faut ensuite régler correctement les propriétés du projet pour que le code
 
 ![Screenshot #3](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProprietesModule3.JPG)
 
+Écrivez C:\Program Files\Python36\include dans les répertoires includes et C:\Program Files\Python36\libs dans les répertoires de bibliothèques.
+
 ![Screenshot #4](https://github.com/lucazzzzz/lab4/blob/master/Images_Lab4/ProprietesPython.JPG)
 
 Une fois que la solution a été générée, il faut maintenant générer le module pyd pour le deuxième fichier cpp, boucle_thread.cpp (il faut tout d'abord supprimer le fichier boucle_simple du projet et ajouter le deuxième fichier boucle_thread):
